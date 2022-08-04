@@ -1,0 +1,8 @@
+.container{
+    border-radius: 0 10px 10px 0;
+    border: dotted 2px rgb(21, 18, 34);
+    background-color: rgb(113, 192, 166);
+    width: auto;
+    height: 80px;
+    margin-top: 10px;
+}

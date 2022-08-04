@@ -1,0 +1,24 @@
+export const GET_ALL_COUNTRIES = 'GET_ALL_COUNTRIES'
+export const GET_COUNTRIES_BY_NAME = 'GET_COUNTRIES_BY_NAME'
+export const GET_COUNTRY_DETAIL = 'GET_COUNTRY_DETAIL'
+
+
+export const LOADING = 'LOADING'
+export const CLEAR = 'CLEAR'
+
+export const ORDER_A_Z = 'ORDER_A_Z'
+export const ORDER_Z_A = 'ORDER_Z_A'
+export const ORDER_M_m = 'ORDER_M_m'
+export const ORDER_m_M = 'ORDER_m_M'
+export const ORDER_QUITAR = 'ORDER_QUITAR'
+
+export const CURRENT_PAGE = 'CURRENT_PAGE'
+
+export const FILTER_BY_CONTINENT = 'FILTER_BY_CONTINENT' 
+export const REMOVE_FILTER = 'REMOVE_FILTER'
+export const SET_FILTER_CONTINENT = 'SET_FILTER_CONTINENT'
+export const FILTER_BOLEAN = 'FILTER_BOLEAN'
+
+export const GET_ALL_ACTIVITIES = 'GET_ALL_ACTIVITIES'
+export const SET_FILTER_ACTIVITY = 'SET_FILTER_ACTIVITY'
+export const FILTER_BY_ACTIVITY = 'FILTER_BY_ACTIVITY'

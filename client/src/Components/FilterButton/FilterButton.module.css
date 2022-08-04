@@ -1,0 +1,12 @@
+select{
+    border: none;
+    border-radius: 0 8px 8px 0;
+    padding:0 ;
+    margin: 2px;
+    background-color: #d4f3f0;
+    box-shadow: 6px 6px 12px #d7d7ff,
+                -6px -6px 12px #e2f9ff;
+    font-size: 15px;
+    max-width: 200px;
+    height: 20px;
+}

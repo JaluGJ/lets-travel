@@ -1,0 +1,51 @@
+.error{
+    color:red;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.input {
+    border: none;
+    border-radius: 8px 0 0 8px;
+    padding: 4px;
+    background-color: #d4f3f0;
+    box-shadow: 6px 6px 12px #d7d7ff,
+                -6px -6px 12px #e2f9ff;
+    font-size: medium;
+    font-weight: bold;
+    max-width: 200px;
+    height: 35px;
+   }
+   
+   .input:focus {
+    outline-color: white;
+    place-content: "Enter your message!";
+   }
+
+.btn{
+    border: none;
+    border-radius: 0 8px 8px 0;
+    padding: 4px;
+    background-color: #d4f3f0;
+    box-shadow: 6px 6px 12px #d7d7ff,
+                -6px -6px 12px #e2f9ff;
+    font-size: medium;
+    font-weight: bold;
+    max-width: 200px;
+    width: 40px;
+}
+.btn:hover{
+    background-color: #a5f3eb;
+}
+.lista {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    align-items:center ;
+    font-size: 18px;
+    padding: 5px;
+    background-color: rgba(96, 187, 194,0.4);
+    border-radius: 10px;
+    border: 1px white solid;
+}

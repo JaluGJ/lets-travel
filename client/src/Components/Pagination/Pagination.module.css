@@ -1,0 +1,16 @@
+.container{
+   background: radial-gradient(#60BBC2,#A4E9E0);
+   width: max-content;
+}
+.activado{
+    border-radius: 10px;
+    background-color: blue;
+}
+.desactivado{
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 3px;
+}
+.desactivado:hover{
+    background-color: rgba(0, 0, 255, 0.5);
+}

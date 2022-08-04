@@ -1,0 +1,31 @@
+.input {
+    border: none;
+    border-radius: 8px 0 0 8px;
+    padding: 4px;
+    background-color: #d4f3f0;
+    box-shadow: 6px 6px 12px #d7d7ff,
+                -6px -6px 12px #e2f9ff;
+    font-size: medium;
+    font-weight: bold;
+    max-width: 200px;
+   }
+   
+   .input:focus {
+    outline-color: white;
+    place-content: "Enter your message!";
+   }
+
+.btn{
+    border: none;
+    border-radius: 0 8px 8px 0;
+    padding: 4px;
+    background-color: #d4f3f0;
+    box-shadow: 6px 6px 12px #d7d7ff,
+                -6px -6px 12px #e2f9ff;
+    font-size: medium;
+    font-weight: bold;
+    max-width: 200px;
+}
+.btn:hover{
+    background-color: #a5f3eb;
+}
