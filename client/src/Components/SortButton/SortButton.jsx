@@ -7,7 +7,7 @@ import s from './SortButton.module.css'
 export default function SortButton() {
     const dispatch = useDispatch()
 
-    const { order, allCountries, filterStatus } = useSelector(state => state)
+    const { order, allCountries } = useSelector(state => state)
 
     function handleButton(e) {
         e.preventDefault()

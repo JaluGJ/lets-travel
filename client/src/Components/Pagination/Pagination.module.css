@@ -16,10 +16,11 @@
     display: flex;
     align-self: center;
     justify-content: center; 
+    transform: scale(1);
     transition: color 300ms;
 }
 .desactivado:hover{
-    color: white
+    color: white;
 }
 .activado {
     background-image: url(https://res.cloudinary.com/dvzgzgzln/image/upload/v1661779751/lets-travel/Icons/pagination-frame-selected_njondv.png) ;

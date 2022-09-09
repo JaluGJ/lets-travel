@@ -5,16 +5,22 @@
     width: auto;
     height: auto;
 }
-.select {
+.selectC, 
+.selectA {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 1.61vw;
     letter-spacing: 0.09em;
     padding: 0;
-    margin: auto;
     width: 21.9vw;
     height: 4.5vh;
     background: #D9D9D9;
     border: 1px solid #000000;
     border-radius: 20px;
+}
+.selectC{
+margin: 2.5vh 1.2vw 0.3vh 1.2vw;
+}
+.selectA{
+    margin: 0.3vh 1.2vw 2.5vh 1.2vw;
 }

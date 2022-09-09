@@ -19,7 +19,7 @@ export default function Images({ name }) {
   useEffect(async () => {
     let im = await pexels(name)
     setImages(im.photos)
-  }, [])
+  }, )
 
   return (
     <div className={style.container}>

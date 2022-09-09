@@ -10,7 +10,7 @@ export default function Home() {
   const dispatch = useDispatch()
 
   const { allCountries, loading, currentPage } = useSelector(state => state)
-  const [cardsPerPage, setCardsPerPage] = useState(10)
+  const cardsPerPage=10
   const [paginaActual, setPaginaActual] = useState(currentPage)
 
   const numberOfPages = Math.ceil(((allCountries.length) / cardsPerPage))
@@ -40,7 +40,7 @@ export default function Home() {
           {loading ?
             <div className={s.error}>
               <p className={s.cnf}> Searching</p>
-              <img className={s.loading} src='https://res.cloudinary.com/dvzgzgzln/image/upload/v1662401262/lets-travel/392102850_EARTH_EMOJI_400px_hp5vjj.gif'/*'https://i.stack.imgur.com/hzk6C.gif'*/ alt='cargando' />
+              <img className={s.loading} src='https://res.cloudinary.com/dvzgzgzln/image/upload/v1662401262/lets-travel/392102850_EARTH_EMOJI_400px_hp5vjj.gif'alt='cargando' />
             </div>
             :
             <div className={allCountries.length ? s.cards : s.error}>{

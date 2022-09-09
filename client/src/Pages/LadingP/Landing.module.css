@@ -13,8 +13,11 @@
     margin: 0;
     padding: 0;
     border: 0;
+    transform: scale(1);
+    transition: transform 1s;
 }
 .btn:hover{
     background:radial-gradient(rgba(161, 123, 17, 0.27) 20%, rgba(255, 255, 255, 0) 70%);
-    mix-blend-mode:color-burn;
+    /* mix-blend-mode:color-burn; */
+    transform: scale(1.04);
 }
