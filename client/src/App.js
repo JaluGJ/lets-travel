@@ -6,6 +6,7 @@ import Landing from './Pages/LadingP/Landing';
 import Home from './Pages/Home/Home';
 import CountryDetail from './Pages/CountryDetail/CountryDetail';
 import CreateActivity from './Pages/CreateActivity/CreateActivity';
+import About from './Pages/About/about';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route exact path='/home' component={Home} />
       <Route exact path='/create' component = {CreateActivity}/>
       <Route exact path='/country/:id' component = {CountryDetail}/>
+      <Route exact path='/about' component = {About}/>
      </>
   );
 }

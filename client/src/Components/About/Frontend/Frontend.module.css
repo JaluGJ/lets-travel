@@ -1,0 +1,32 @@
+.text {
+  font-family: 'Roboto';
+  font-size: 1.17vw;
+  margin-left: 1.4vw;
+}
+
+.title {
+  font-family: 'Roboto';
+  margin-left: 1.46vw;
+  font-size: 2.1vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  font-style: italic;
+}
+
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  /* width: 14.64vw; */
+  /* background-color: white; */
+}
+.imageN, 
+.imageE, 
+.imageS, 
+.imageT, 
+.imageH {
+  width: 7.32vw;
+  margin: 0.73vw;
+}

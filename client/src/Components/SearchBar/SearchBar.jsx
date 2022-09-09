@@ -19,9 +19,9 @@ export default function SearchBar() {
     
     return (
         <>
-            <form onSubmit={(e) => handleSubmit(e)}>
+            <form className={s.cont} onSubmit={(e) => handleSubmit(e)}>
                 <input className={s.input} type='text' value={nombre} onChange={(e) => setName(e.target.value)} placeholder='Search a Country' />
-                <button className={s.btn} type='submit'>Search</button>
+                <button className={s.btn} type='submit'><img className={s.img} src="https://res.cloudinary.com/dvzgzgzln/image/upload/v1661289504/lets-travel/Icons/lupa_rlb5fa.png" alt="Search" /></button>
             </form>
         </>
     )

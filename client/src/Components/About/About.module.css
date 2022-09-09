@@ -1,0 +1,45 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "database backend"
+    "frontend developer";
+  column-gap: 2.92vw;
+  row-gap: 5.20vh;
+  justify-items: center;
+  margin: 2.61vh 0;
+  
+}
+.database{
+  grid-area: database;
+  width: 40.99vw;
+  height: 33.42vh;
+  border: 0.08vw solid black;
+  border-radius: 2.92vw 0 0 0;
+  background-color: rgba(93, 90, 231, 0.31);
+}
+.backend{
+  grid-area: backend;
+  width: 40.99vw;
+  height: 33.42vh;
+  border: 0.08vw solid black;
+  border-radius: 0 2.92vw 0 0;
+  background-color: rgb(217, 217, 217);
+}
+.frontend{
+  grid-area: frontend;
+  width: 40.99vw;
+  height: 33.42vh;
+  border: 0.08vw solid black;
+  border-radius: 0 0 0 2.92vw ;
+  background-color: rgb(217, 217, 217);
+}
+.developer{
+  grid-area: developer;
+  width: 40.99vw;
+  height: 33.42vh;
+  border: 0.08vw solid black;
+  border-radius: 0 0 2.92vw 0;
+  background-color: rgba(196, 246, 145, 0.25);;
+}

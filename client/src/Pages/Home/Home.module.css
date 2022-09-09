@@ -1,37 +1,47 @@
 .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 135px 3rem 3.3fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "navBar"
-        "pagination"
-        "cards";
+    display: flex;
+    flex-direction: row;
 }
 
-.navBar {
-    grid-area: navBar;
-    background: radial-gradient(#839AA8, #47B5FF);
-    border: solid 2px white;
-    height: 135px;
+.sideBar {
+   background: linear-gradient(90deg, rgba(15, 15, 15, 0.2) 2.08%, rgba(211, 163, 72, 0) 100%), #765126;
+    
 }
 
-.pagination {
-    grid-area: pagination;
-    background:linear-gradient(to bottom, #aff0e4, #4CACBC,#aff0e4);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-self: center;
+.cardsCont{
+    background-image: url(https://res.cloudinary.com/dvzgzgzln/image/upload/v1661274912/lets-travel/tipos-mapas-default_hppftw.jpg);
+    height: 100vh;
+    width: 74.4vw;
+    background-size: cover;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.loading{
+    width: 44vw;
+    margin: 0;
+    padding: 0;
+}
+ .cards{
+    flex-grow: 2;
+} 
+.pagAndCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-self: center;
+    margin-top: 1vh;
+    flex-grow: 1;
 }
-
-
+.cnf{
+    font-family: "Roboto",sans-serif;
+    font-size: 2.56vw;
+    font-weight: 700;
+    background-color: rgba(118, 81, 38, 0.50);
+}
 .error {
-    background: linear-gradient(rgba(255,255,255,0),rgba(175, 240, 228,1));
-    background-size: cover ;
+    height: 100vh ;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -43,7 +53,36 @@
     grid-area: cards;
 }
 .imag{
-    background: linear-gradient(rgba(255,255,255,0),rgba(175, 240, 228,1), url('https://media2.giphy.com/media/UoeaPqYrimha6rdTFV/giphy.gif '));
-    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, to(rgba(0,0,0,0)),from(rgba(0,0,0,1)),);
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,1));
+    mix-blend-mode: multiply;
+    width: 36.6vw;
+}
+.botonDer{
+    background-image: url(https://res.cloudinary.com/dvzgzgzln/image/upload/v1661289508/lets-travel/Icons/arrow-head_y69uxe.png);
+    background-size: 5.85vw 11.42vh;
+    width: 5.85vw;
+    height: 11.42vh;
+    align-self: center;
+    transform: rotateY(180deg);
+    padding: 0;
+    margin: 0;
+    transition: background-image 200ms;
+}
+.botonIzq{
+    background-image: url(https://res.cloudinary.com/dvzgzgzln/image/upload/v1661289508/lets-travel/Icons/arrow-head_y69uxe.png);
+    background-size: 5.85vw 11.42vh;
+    width: 5.85vw;
+    height: 11.42vh;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    transition: background-image 200ms;
+}
+.botonDer:hover{
+    background-image: url(https://res.cloudinary.com/dvzgzgzln/image/upload/v1661779748/lets-travel/Icons/arrow-head-white_bygt8y.png);
+    cursor: pointer;
+    
+}
+.botonIzq:hover{
+    background-image: url(https://res.cloudinary.com/dvzgzgzln/image/upload/v1661779748/lets-travel/Icons/arrow-head-white_bygt8y.png);
+    cursor: pointer;
 }

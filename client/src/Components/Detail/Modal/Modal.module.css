@@ -1,0 +1,25 @@
+.imagen{
+  width: 70vw;
+  height: 70vh;
+  border-radius: 0.5vw;
+}
+.button{
+  position: inherit;
+  background-color: rgba(255, 255, 255, 0.438);
+  border-color: transparent;
+  outline: 0.2vw solid;
+  outline-color: blue;
+  width: 3.8vw;
+  height: 6.3vh;
+  top: 16vh;
+  right: 16vw;
+  color: blue;
+  font-family: 'Roboto', sans-serif;
+  font-size: x-large;
+  border-radius: 0.3vw;
+}
+.button:hover{
+  background-color: rgba(159, 182, 45, 0.692);
+  color: rgb(165, 42, 42);
+  outline-color: rgb(165, 42, 42);
+}
