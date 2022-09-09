@@ -12,7 +12,7 @@ export const Any = 'Any'
 export default function FilterButton() {
 
 
-  const { allCountries, backUpCountries, continentFilter, allActivities, activityFilter } = useSelector(state => state)
+  const { backUpCountries, continentFilter, allActivities, activityFilter } = useSelector(state => state)
 
   const [filtered, setFiltered] = useState({
     continent: [],
@@ -133,7 +133,7 @@ export default function FilterButton() {
 
   return (
       <div className={s.container}>
-        <select className={s.select} name='continents' onChange={(e) => handleFilter(e)} value={continentFilter}>
+        <select className={s.selectC} name='continents' onChange={(e) => handleFilter(e)} value={continentFilter}>
           <option key='Any' value='Any' name='Any'>Filter by Continent</option>
           {continents?.map(c => {
             return (
@@ -142,7 +142,7 @@ export default function FilterButton() {
           })}
         </select>
         <br />
-        <select className={s.select} name='activities' onChange={(e) => handleFilter(e)} value={activityFilter}>
+        <select className={s.selectA} name='activities' onChange={(e) => handleFilter(e)} value={activityFilter}>
           <option key='Any' value='Any' name='Any'>Filter by Activities</option>
           {activitiess?.map(ac => {
             return (
