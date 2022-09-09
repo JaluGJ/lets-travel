@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-//import { useState } from 'react'
 import { useDispatch /* , useSelector */ } from 'react-redux'
 import Detail from '../../Components/Detail/Detail'
 import { clearDetail, getCountryDetail } from '../../Redux/actions'
+import BasePage from '../BasePage/basePage'
 
 export default function CountryDetail(props) {
     const id = props.match.params.id
@@ -19,7 +19,7 @@ export default function CountryDetail(props) {
 
   return (
     <>
-        <Detail id= {id}/>
+        <BasePage body={<Detail id={id}/>}/>
     </>
   )
 }

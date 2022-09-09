@@ -10,21 +10,32 @@ function NavBar() {
         <header className={s.container}>
             <div className={s.back}>
                 <Link to='/'>
-                    <button className={s.btnback}>{'<='}</button>
+                    <img  src={'https://res.cloudinary.com/dvzgzgzln/image/upload/v1660012370/lets-travel/let_s_travel_mrurtn.png'} className={s.btnback}/>
                 </Link>
             </div>
             <div className={s.search}>
                 <SearchBar />
             </div>
-            <div className={s.filters}>
-                <FilterButton />
+            <hr className={s.lines}/>
+            <div className={s.create}>
+                <Link style={{ textDecoration: 'none' }} to='/create'>
+                    <button className={s.btnCreate}>Add a new activity <img className={s.img} src='https://res.cloudinary.com/dvzgzgzln/image/upload/v1661468799/lets-travel/Icons/2664_uau1hy.png'/></button>
+                </Link>
             </div>
+            <hr className={s.lines}/>
             <div className={s.sorts}>
                 <SortButton />
             </div>
+            <hr className={s.lines}/>
+            <p className={s.font}>Filter</p>
+            <hr style={{width:'20.5vw' , borderColor:'#000', position:'relative', marginLeft:'0px', paddingLeft:'0px'}}/>
+            <div className={s.filters}>
+                <FilterButton />
+            </div>
+            <hr className={s.lines}/>
             <div className={s.create}>
-                <Link to='/create'>
-                    <button className={s.btnCreate}>Create new Tourist Activity</button>
+                <Link style={{ textDecoration: 'none' }} to='/about'>
+                    <button className={s.btnCreate}>More about <img className={s.img} src='https://res.cloudinary.com/dvzgzgzln/image/upload/v1661468247/lets-travel/Icons/ic_info_48px-512_maoecs.webp'/> </button>
                 </Link>
             </div>
         </header>

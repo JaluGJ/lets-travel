@@ -1,58 +1,150 @@
-.home {
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
-}
-
-.home:hover {
-    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
-}
-.container{
+.container {
     display: grid;
-    grid-template-rows: 40px 1fr;
-    justify-content: center;
-}
-.detContainer {
-
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 1fr;
-    gap: 0px 0px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
     grid-template-areas:
-        "bandera bandera"
-        "detalles actividades";
-    width: max-content;
-    height: max-content;
-    border-radius: 30px;
-    background: #e0e0e0;
-    box-shadow: 15px 15px 30px #bebebe,
-        -15px -15px 30px #ffffff;
+        "a b"
+        "c b";
+    column-gap: 0.81vw;
+    row-gap: 4.29vh;
+    margin: 3.9vh 2.19vw;
 }
 
-.bandera {
-    grid-area: bandera;
-    display: grid;
+/*------------------------------------*/
+.top {
+    grid-area: a;
+    display: flex;
+    flex-direction: row;
+    height: 20.18vh;
+}
+
+.flag {
+    width: 17.56vw;
+    height: 20.18vh;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 0.6vw;
+    align-self: center;
+}
+
+.details {
+    width: 25.3vw;
+    height: 20.18vh;
+    background: rgba(47, 46, 35, 0.48);
+    border: 0.3vw solid #000000;
+    border-radius: 0.8vw;
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 1.1vw;
+    align-self: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    width: 20.64vw;
+    font-family: 'Roboto';
 }
 
-.banderados {
-    width: 600px;
-    height: 200px;
-    opacity: 0.8;
-    border-radius: 20px 20px 0 0;
+.country {
+    font-weight: 800;
+    font-size: 2.92vw;
+    margin: 0;
+    padding: 0;
 }
 
-.detalles {
-    width: 300px;
-    grid-area: detalles;
-    border: solid 2px rgb(54, 54, 54);
-    border-radius: 0 0 0 30px;
-    font-size: small;
-    height: 24rem;
+.countryL {
+    font-weight: 800;
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.continent {
+    font-weight: 400;
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------------------------*/
+.images {
+    grid-area: b;
+    border-radius: 0.6vw;
+    height: 70.31vh;
+    background: rgba(55, 19, 7, 0.48);
+    border: 3px solid #000000;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.images::-webkit-scrollbar {
+    width: 10px;
+}
+
+.images::-webkit-scrollbar-track {
+    background: rgba(118, 81, 38, 0.50);
+}
+
+.images::-webkit-scrollbar-thumb {
+    background-color: rgb(189, 160, 0);
+    border-radius: 20px;
+    border: 2px solid rgb(39, 38, 35);
+}
+
+/*------------------------------------*/
+.touristActivities {
+    font-size: 1.46vw;
+    margin: 1.42vh;
+}
+
+.activities {
+    grid-area: c;
+    background: #D9D9D9;
+    border: 0.2vw solid rgb(0, 0, 0);
+    border-radius: 0.6vw;
+    height: 44.79vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.activities::-webkit-scrollbar {
+    width: 10px;
+}
+
+.activities::-webkit-scrollbar-track {
+    background: rgba(118, 81, 38, 0.50);
+}
+
+.activities::-webkit-scrollbar-thumb {
+    background-color: rgb(189, 160, 0);
+    border-radius: 20px;
+    border: 2px solid rgb(39, 38, 35);
 }
 
 .actividades {
-    grid-area: actividades;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+/*------------------------------------*/
+.loadingTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cnf {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.56vw;
+    font-weight: 700;
+    background-color: rgba(118, 81, 38, 0.50);
 }

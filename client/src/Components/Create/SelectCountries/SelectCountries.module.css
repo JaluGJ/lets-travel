@@ -1,51 +1,111 @@
-.error{
-    color:red;
-    font-size: 15px;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/* .container {
+  grid-area: countries;
+  display: flex;
+  flex-direction: column;
+} */
+
+.error {
+  color: red;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.contenedor{
+  grid-area: countries;
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  margin-left: 1.1vw;
+}
+.divBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
 }
 .input {
-    border: none;
-    border-radius: 8px 0 0 8px;
-    padding: 4px;
-    background-color: #d4f3f0;
-    box-shadow: 6px 6px 12px #d7d7ff,
-                -6px -6px 12px #e2f9ff;
-    font-size: medium;
-    font-weight: bold;
-    max-width: 200px;
-    height: 35px;
-   }
-   
-   .input:focus {
-    outline-color: white;
-    place-content: "Enter your message!";
-   }
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1.61vw;
+  letter-spacing: 0.09em;
+  width: 18.9vw;
+  height: 4.5vh;
+  background: #D9D9D9;
+  border: 1px solid #000000;
+  border-radius: .3vw;
+}
 
-.btn{
-    border: none;
-    border-radius: 0 8px 8px 0;
-    padding: 4px;
-    background-color: #d4f3f0;
-    box-shadow: 6px 6px 12px #d7d7ff,
-                -6px -6px 12px #e2f9ff;
-    font-size: medium;
-    font-weight: bold;
-    max-width: 200px;
-    width: 40px;
+.input:focus {
+  outline-color: white;
+  place-content: "Enter your message!";
 }
-.btn:hover{
-    background-color: #a5f3eb;
+
+.btn {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1.61vw;
+  letter-spacing: 0.09em;
+  width: 5vw;
+  height: 4.5vh;
+  background: #D9D9D9;
+  border: 1px solid #000000;
+  border-radius: .3vw;
+  transition: background-color 300ms ;
 }
+
+.btn:hover {
+  background-color: #b67f38;
+}
+
+.inputCont{
+  font-weight: 400;
+  margin-right: 3vw;
+}
+
+/*-----------------------------*/
+
+.listado{
+  grid-area: listado;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+}
+.listado::-webkit-scrollbar {
+  width: 10px;
+}
+
+.listado::-webkit-scrollbar-track {
+  background: rgba(118, 81, 38, 0.50);
+}
+
+.listado::-webkit-scrollbar-thumb {
+  background-color: rgb(189, 160, 0);
+  border-radius: 20px;
+  border: 2px solid rgb(39, 38, 35);
+}
+
+
 .lista {
-    display: flex;
-    flex-direction: row;
-    height: 20px;
-    align-items:center ;
-    font-size: 18px;
-    padding: 5px;
-    background-color: rgba(96, 187, 194,0.4);
-    border-radius: 10px;
-    border: 1px white solid;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  height: 4vh;
+  font-weight: 500;
+  align-items: center;
+  font-size: 1.61vw;
+  padding: 5px;
+}
+.bton{
+  height: inherit;
+  border: 0.18vw solid black ;
+  border-radius: 0.5vw;
+  margin: 0 0.6vw ;
+  background-color:#D9D9D9;
+  transition-property: background-color ;
+  transition-duration: 300ms;
+
+}
+.bton:hover{
+  background-color: rgb(212, 58, 58);
 }

@@ -1,31 +1,45 @@
-.input {
-    border: none;
-    border-radius: 8px 0 0 8px;
-    padding: 4px;
-    background-color: #d4f3f0;
-    box-shadow: 6px 6px 12px #d7d7ff,
-                -6px -6px 12px #e2f9ff;
-    font-size: medium;
-    font-weight: bold;
-    max-width: 200px;
-   }
-   
-   .input:focus {
-    outline-color: white;
-    place-content: "Enter your message!";
-   }
-
-.btn{
-    border: none;
-    border-radius: 0 8px 8px 0;
-    padding: 4px;
-    background-color: #d4f3f0;
-    box-shadow: 6px 6px 12px #d7d7ff,
-                -6px -6px 12px #e2f9ff;
-    font-size: medium;
-    font-weight: bold;
-    max-width: 200px;
+.cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
-.btn:hover{
-    background-color: #a5f3eb;
+
+.input {
+    box-sizing: border-box;
+    font-size: 1.61vw;
+    width: 17.6vw;
+    height: 4.3vh;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    border-radius: 20px 0 0 20px;
+}
+
+.input:focus {
+    outline: 2px solid;
+    outline-color: #000;
+    place-content: "Enter your message!";
+}
+
+.btn {
+    border: 1px solid #000;
+    border-radius: 0 20px 20px 0;
+    padding: 0px;
+    background-color: #D9D9D9;
+    height: 4.3vh;
+    width: 4.3vw;
+}
+
+.btn:hover {
+    outline: 2px solid;
+    outline-color: #000
+}
+
+.img {
+    justify-self: center;
+    height: 24px;
+    padding: 0px;
+    margin: 0px
 }

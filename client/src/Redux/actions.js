@@ -3,7 +3,7 @@ import { CLEAR, CURRENT_PAGE, FILTER_BOLEAN, FILTER_BY_ACTIVITY, FILTER_BY_CONTI
     GET_COUNTRY_DETAIL, LOADING, ORDER_A_Z, ORDER_m_M, ORDER_M_m, ORDER_QUITAR, 
     ORDER_Z_A, REMOVE_FILTER, SET_FILTER_ACTIVITY, SET_FILTER_CONTINENT } from './const';
 import { activitiesAll, countriesById, countriesName, generalCountries } from '../Functions/ApiCall';
-import { a_z, A_Z, Ma_me, me_Ma, m_M, M_m, z_a, Z_A } from '../Functions/Order';
+import { a_z, A_Z, Ma_me, me_Ma, m_M, M_m, QUITAR, z_a, Z_A } from '../Functions/Order';
 import { filterByActivity, filterByContinent } from '../Functions/Filter';
 import { Any } from '../Components/FilterButton/FilterButton';
 //------------Get actions--------------
@@ -86,8 +86,8 @@ export function orderCountries (countriesArray, param){
             dispatch({type: LOADING, payload: false})
             return dispatch({type: ORDER_m_M, payload: mema, order: m_M})
         default:
-            dispatch({type:FILTER_BOLEAN, payload:false})
-            return dispatch({type: ORDER_QUITAR, payload: null})
+            //dispatch({type:FILTER_BOLEAN, payload:false})
+            return dispatch({type: ORDER_QUITAR, payload: null, order: QUITAR})
     }
     }
 }
@@ -106,7 +106,7 @@ export function doFilterByContinet(countriesArray, continent){
             const filter = filterByContinent(countriesArray, continent)
             return dispatch({type:FILTER_BY_CONTINENT, payload:filter})
         }
-        return dispatch ({type:REMOVE_FILTER, payload:null})
+        return dispatch ({type:REMOVE_FILTER, payload:{by: "continent", val: "Any", obj: countriesArray}})
     }
 }
 //DFBA => it will filter by activity, then it dispaches a replacement for allCountries.
@@ -118,6 +118,6 @@ export function doFilterByActivity(countriesArray, activity){
             const filter = filterByActivity(countriesArray, activity)
             return dispatch({type:FILTER_BY_ACTIVITY, payload:filter})
         }
-        return dispatch ({type:REMOVE_FILTER, payload:null})
+        return dispatch ({type:REMOVE_FILTER, payload:{by: "activity", val: "Any", obj: countriesArray}})
     }
 }

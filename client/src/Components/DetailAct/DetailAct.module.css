@@ -1,8 +1,26 @@
 .container{
-    border-radius: 0 10px 10px 0;
-    border: dotted 2px rgb(21, 18, 34);
-    background-color: rgb(113, 192, 166);
-    width: auto;
-    height: 80px;
-    margin-top: 10px;
+    border-radius: 6%;
+    border: 1px dashed #000000;
+    background-color: rgba(0, 0, 0, 0.21);
+    width:10.98vw;
+    height: 16.92vh;
+    margin: 0.7vh 0.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title{
+    text-align: center;
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.text{
+    font-size:1.1vw;
+    margin: 0 0 0 10px;
+    padding: 0;
+    
 }

@@ -1,0 +1,37 @@
+.container {
+  background: linear-gradient(0deg, rgba(80, 63, 20, 0.2), rgba(80, 63, 20, 0.2)), url(https://res.cloudinary.com/dvzgzgzln/image/upload/v1661470307/lets-travel/detail-background_z4ri7h.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.exit {
+  width: 3.51vw;
+  height: 5.46vh;
+  background: #ac7d19;
+  border: 0.3vw solid #000000;
+  border-radius: 1.24vw 1.24vw 0px 1.24vw;
+  align-self: flex-end;
+  margin-right: 5.7vw;
+  margin-bottom: 0.6vh;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 1.46vw;
+  transition: background-color 300ms;
+}
+.exit:hover{
+  background-color: #FF0000;
+}
+
+.body {
+  background: rgba(217, 217, 217, 0.68);
+  border: 6px solid #000000;
+  box-shadow: 0.73vw 0.73vw 0.3vw 0.14vw rgba(0, 0, 0, 0.25);
+  border-radius: 2.92vw 0px;
+  width: 87.82vw;
+  height: 78.13vh;
+  align-self: center;
+}
